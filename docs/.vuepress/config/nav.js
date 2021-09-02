@@ -11,6 +11,22 @@ module.exports = [
       { text: '使用指南', link: '/pages/manual/2015021401/' }
     ]
   },
+  {
+    text: 'MIKE模型',
+    link: '/mike-model/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+    items: [
+      { text: '使用技巧', link: '/pages/mike-model/application/2020090301/'},
+      { text: '开发技巧', link: '/pages/mike-mode/dev/2015021401/' }
+    ]
+  },
+  {
+    text: '程序开发',
+    link: '/coding/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+    items: [
+      { text: '.net', link: '/pages/coding/net/2020090301/'},
+      { text: 'python', link: '' }
+    ]
+  },
   // {
   //   text: '模型',
   //   link: '/models/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
