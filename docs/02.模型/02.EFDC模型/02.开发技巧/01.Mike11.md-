@@ -1,8 +1,10 @@
 ---
 title: C#操作MIKE模型时间序列文件
 date: 2021-09-03 01:48:09
-permalink: /pages/mike-mode/dev/2015021401
-categories: 
+permalink: /pages/efdc-mode/dev/2015021401
+categories:
+  - 模型
+  - EFDC模型
   - 开发技巧
 tags: 
   - dfs0

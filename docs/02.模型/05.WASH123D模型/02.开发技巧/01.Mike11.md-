@@ -1,0 +1,27 @@
+---
+title: C#操作MIKE模型时间序列文件
+date: 2021-09-03 01:48:09
+permalink: /pages/wash-mode/dev/2015021401
+categories: 
+  - 模型
+  - WASH123D模型
+  - 开发技巧
+tags: 
+  - dfs0
+author: 
+  name: 嗖嗖社区
+  link: http://toolsbox.org.cn
+---
+
+## C#操作MIKE模型时间序列文件
+在对MIKE模型的时间序列文件进行程序读写操作时，一般是通过调用TSObjectClass这个对象来实现的。
+如下为C#代码示例。
+
+```C#
+var tsobj = new TSObjectClass();
+tsobj.Connection.FilePath = dfs0file;
+tsobj.Connection.Bridge = "dfs Timeseries Bridge"; 
+tsobj.Connection.Open();
+```
+这里需要注意的是，这个对象所属的DHI.TimeSeries.dll库对编译架构要求严格，必须匹配。
+
