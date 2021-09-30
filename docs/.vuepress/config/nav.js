@@ -17,6 +17,13 @@ module.exports = [
     text: '模型',
     link: '/models/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [{
+      text: '模型平台', items: [
+        { text: '平台开发', link: '/pages/model/dev/2021090801/' },
+        { text: '平台展示', link: '/pages/mode/show/2015021401/' },
+        { text: '标准化接口', link: '/pages/mode/api/2015021401/' },
+      ]
+    },
+      {
       text: 'MIKE模型', items: [
         { text: '使用技巧', link: '/pages/mike-model/application/2020090301/' },
         { text: '开发技巧', link: '/pages/mike-mode/dev/2015021401/' }]
