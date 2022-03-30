@@ -22,3 +22,20 @@ categories:
 如果已经安装了以上运行环境，可以直接点击<span class="JustThisApp"><a href="SYApp.WPF.application">启动应用</a></span>。否则，可点击下面安装按钮，在本地安装以上运行环境。
 
 <a id="InstallButton" href="setup.exe">安装</a>
+
+------------
+#### | 应用名称 |
+- WaterGIS
+#### | 应用介绍 |
+- 水环境地理信息软件。
+#### | 版本     | 
+- 0.0.0.2
+#### | 开发者   |
+- 由一众环境质量模型爱好者开发维护。
+------------
+该应用程序需要以下运行环境:
+- Microsoft .NET Framework 4.5.2 (x86 and x64)
+
+如果已经安装了以上运行环境，可以直接点击<span class="JustThisApp"><a href="watergis/WaterGIS.application">启动应用</a></span>。否则，可点击下面安装按钮，在本地安装以上运行环境。
+
+<a id="InstallButton" href="watergis/setup.exe">安装</a>
