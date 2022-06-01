@@ -48,7 +48,7 @@ module.exports = [
         { text: '使用技巧', link: '/pages/wash-model/application/2020090301/' },
         { text: '开发技巧', link: '/pages/wash-mode/dev/2015021401/' }]
     },
-    ],
+    { text: '模型比较', link: '/pages/models/modelcompare/2022060102/'}],
   },
   {
     text: 'GIS',
