@@ -28,7 +28,7 @@ module.exports = {
       font-weight: bold;
       margin: 0 0 8px 0;
     ">公众号</p>
-    <img src="/img/地表水环境.bmp"  style="width:100%;" />
+    <img src="/img/地表水环境.bmp"  style="width:60%;" />
     <p>
     分享交流水利环境监测、模拟、监管、防治方面的知识。
     </p>

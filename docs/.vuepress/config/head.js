@@ -6,7 +6,7 @@ module.exports = [
     'meta',
     {
       name: 'keywords',
-      content: '嗖嗖,嗖嗖水环境,技术博客,水利,环境,洪水,水质,污染,模型,水质模型,洪水模型,技术文档,学习,',
+      content: '嗖嗖,嗖嗖水环境,数字孪生,技术博客,水利,环境,洪水,水质,污染,模型,水质模型,洪水模型,技术文档,学习,',
     },
   ],
   // ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证
