@@ -20,7 +20,7 @@ module.exports = [
       text: '模型平台', items: [
         { text: '平台开发', link: '/pages/model/dev/2021090801/' },
         { text: '平台展示', link: '/pages/mode/show/2015021401/' },
-        { text: '标准化接口', link: '/pages/mode/api/2015021401/' },
+        { text: '标准化接口', link: '/pages/model/apidoc/' },
       ]
     },
       {
