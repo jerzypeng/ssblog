@@ -40,6 +40,7 @@ module.exports = [
     },
     {
       text: 'HEC模型', items: [
+        { text: '模型简介', link: '/pages/hec-model/introduction/' },
         { text: '使用技巧', link: '/pages/hec-model/application/2020090301/' },
         { text: '开发技巧', link: '/pages/hec-mode/dev/2015021401/' }]
     },
