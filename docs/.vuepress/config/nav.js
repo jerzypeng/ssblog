@@ -17,6 +17,9 @@ module.exports = [
     text: '模型',
     link: '/models/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [{
+      text: '模型概述', link: '/pages/model/general/2021090801/'
+    },    
+      {
       text: '模型平台', items: [
         { text: '平台开发', link: '/pages/model/dev/2021090801/' },
         { text: '平台展示', link: '/pages/mode/show/2015021401/' },
@@ -25,27 +28,31 @@ module.exports = [
     },
       {
       text: 'MIKE模型', items: [
+        { text: '模型简介', link: '/pages/mike-model/introduction/mike/' },
         { text: '使用技巧', link: '/pages/mike-model/application/2020090301/' },
         { text: '开发技巧', link: '/pages/mike-mode/dev/2015021401/' }]
     },
     {
       text: 'EFDC模型', items: [
+        { text: '模型简介', link: '/pages/efdc-model/introduction/efdc/' },
         { text: '使用技巧', link: '/pages/efdc-model/application/2020090301/' },
         { text: '开发技巧', link: '/pages/efdc-mode/dev/2015021401/' }]
     },
     {
       text: 'Delft3D模型', items: [
+        { text: '模型简介', link: '/pages/delft-model/introduction/delft/' },
         { text: '使用技巧', link: '/pages/delft-model/application/2020090301/' },
         { text: '开发技巧', link: '/pages/delft-mode/dev/2015021401/' }]
     },
     {
       text: 'HEC模型', items: [
-        { text: '模型简介', link: '/pages/hec-model/introduction/' },
+        { text: '模型简介', link: '/pages/hec-model/introduction/hecras/' },
         { text: '使用技巧', link: '/pages/hec-model/application/2020090301/' },
         { text: '开发技巧', link: '/pages/hec-mode/dev/2015021401/' }]
     },
     {
       text: 'WASH123D模型', items: [
+        { text: '模型简介', link: '/pages/wash-model/introduction/wash123d/' },
         { text: '使用技巧', link: '/pages/wash-model/application/2020090301/' },
         { text: '开发技巧', link: '/pages/wash-mode/dev/2015021401/' }]
     },
@@ -56,13 +63,13 @@ module.exports = [
     link: '/gis/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [{
       text: 'Arcgis', items: [
-        { text: '使用技巧', link: '/pages/mike-model/application/2020090301/' },
-        { text: '开发技巧', link: '/pages/mike-mode/dev/2015021401/' }]
+        { text: '使用技巧', link: '/pages/gis/application/arcgis/2021090801/' },
+        { text: '开发技巧', link: '/pages/gis/dev/arcgis/2015021401/' }]
     },
     {
       text: 'opengis', items: [
-        { text: '使用技巧', link: '/pages/efdc-model/application/2020090301/' },
-        { text: '开发技巧', link: '/pages/efdc-mode/dev/2015021401/' }]
+        { text: '使用技巧', link: '/pages/gis/application/qgis/2021090801/' },
+        { text: '开发技巧', link: '/pages/gis/dev/2015021401/' }]
     },
     ],
   },
@@ -74,6 +81,11 @@ module.exports = [
         { text: '政府采购环保项目', link: '/pages/projects/hb/' },
         { text: '政府采购水利项目', link: '/pages/projects/hb/' }]
     },
+    {
+      text:'模拟数据',items:[
+        {text:'水文数据',link:'/pages/database/hydrodata/'}
+      ]
+    }
     ]
   },
   {
@@ -81,12 +93,34 @@ module.exports = [
     link: '/coding/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [{
       text: '语言', items: [
-        { text: '.net', link: '' },
-        { text: 'python', link: '' }]
+        { text: '.net', link: '/pages/coding/.net/2020090301/' },
+        { text: 'python', link: '/pages/coding/python/2020090301/' }]
     },{
       text: '工具', items: [
         { text: 'git', link: '/pages/coding/tools/git/2020090301/' },
         { text: 'vs', link: '/pages/coding/tools/vs/2020090301/' }]
+    },
+    ]
+  },
+  {
+    text: '流域研究',
+    link: '/research/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
+    items: [{
+      text: '鄱阳湖流域', items: [
+        { text: '模型研究', link: '/pages/research/pyh/model/' },
+        { text: '信息管理平台', link: '/pages/research/pyh/dss/' }]
+    },{
+      text: '太湖流域', items: [
+        { text: '模型研究', link: '/pages/research/th/model/' },
+        { text: '信息管理平台', link: '/pages/research/th/dss/' }]
+    },{
+      text: '巢湖流域', items: [
+        { text: '模型研究', link: '/pages/research/chh/model/' },
+        { text: '信息管理平台', link: '/pages/research/chh/dss/' }]
+    },{
+      text: '渤海湾', items: [
+        { text: '模型研究', link: '/pages/research/bhw/model/' },
+        { text: '信息管理平台', link: '/pages/research/bhw/dss/' }]
     },
     ]
   },
@@ -127,10 +161,10 @@ module.exports = [
   //     { text: '友情链接', link: '/friends/' },
   //   ],
   // },
-  { text: '关于', link: '/about/' },
+  { text: '关于', link: '/' },
   {
     text: '收藏',
-    link: '/pages/beb6c0bd8a66cea6/',
+    link: '/',
     // items: [
     //   { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
     //   { text: '资源', link: '/pages/eee83a9211a70f9d/' },
