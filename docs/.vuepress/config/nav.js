@@ -93,7 +93,7 @@ module.exports = [
     link: '/coding/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [{
       text: '语言', items: [
-        { text: '.net', link: '/pages/coding/.net/2020090301/' },
+        { text: '.net', link: '/pages/coding/.net/2022070301/' },
         { text: 'python', link: '/pages/coding/python/2020090301/' }]
     },{
       text: '工具', items: [
