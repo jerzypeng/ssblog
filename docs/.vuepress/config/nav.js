@@ -56,6 +56,12 @@ module.exports = [
         { text: '使用技巧', link: '/pages/wash-model/application/2020090301/' },
         { text: '开发技巧', link: '/pages/wash-mode/dev/2015021401/' }]
     },
+    {
+      text: '机器学习', items: [
+        { text: '模型简介', link: '/pages/ml-model/introduction/ml/' },
+        { text: '使用技巧', link: '/pages/ml-model/application/hydro/' },
+        { text: '开发技巧', link: '/pages/ml-mode/dev/2015021401/' }]
+    },
     { text: '模型比较', link: '/pages/models/modelcompare/2022060102/'}],
   },
   {
