@@ -74,7 +74,7 @@ module.exports = [
     },
     {
       text: 'opengis', items: [
-        { text: '使用技巧', link: '/pages/gis/application/qgis/2021090801/' },
+        { text: '使用技巧', link: '/pages/gis/application/qgis/2022071301/' },
         { text: '开发技巧', link: '/pages/gis/dev/2015021401/' }]
     },
     ],

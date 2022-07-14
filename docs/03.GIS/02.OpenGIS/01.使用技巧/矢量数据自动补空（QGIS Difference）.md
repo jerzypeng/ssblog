@@ -1,0 +1,39 @@
+---
+title: 矢量数据自动补空（QGIS Difference）
+date: 2022-07-13 21:44:49
+permalink: /pages/gis/application/qgis/2022071301/
+categories:
+  - GIS
+  - OpenGIS
+  - 开发技巧
+tags:
+  - QGIS
+---
+### 矢量数据自动补空（QGIS Difference）
+
+今天为大家分享一个矢量数据自动补空的功能，基于开源免费的QGIS软件的Difference工具。
+
+<!-- more -->
+
+#### 应用场景示例
+
+如下图，红线为海岸线，蓝线为近岸河流水系，绿线为某一等高线，面域为自动生成的小流域，我们的目标是对绿线和红线闭合区域进行补全，形成一个完整的流域分区图（当然补全部分并非按流域特征分区）。用于后续作为水力学模型网格划分的控制范围（含内部控制线）。
+
+![](http://md.toolsbox.org.cn/uploads/upload_862350b44cc33259b9da2afe07cc1b21.png)
+
+#### 操作步骤
+
+- 绿线与红线构成面矢量，选择 Polygonize 工具生成面矢量
+
+![](http://md.toolsbox.org.cn/uploads/upload_0fd126c63df543446534f183f8fdeb32.png)
+
+- 选择 Difference 工具，Input layer 选择小的面，Overlay layer 选择大面，执行命令，则自动补全空白
+
+![](http://md.toolsbox.org.cn/uploads/upload_bb4dca1c56ac82fa61e1c4c1173c2071.png)
+
+- 进一步，选择 Merge vector layers 工具将两个面域合并为一个面域，作为下一步模型的前处理数据
+
+![](http://md.toolsbox.org.cn/uploads/upload_91b25f54c48eb05d8f444ef766c9d20f.png)
+
+
+[参考](https://gis.stackexchange.com/questions/218173/how-to-merge-two-shapefiles-with-partial-difference-in-qgis)
