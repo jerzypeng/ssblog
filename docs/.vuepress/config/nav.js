@@ -7,7 +7,7 @@ module.exports = [
     items: [
       {
         text: '开发日志', items: [
-          { text: '日志', link: '/pages/log/2015021401/' }
+          { text: '日志', link: '/pages/log/' }
         ]
       },
       { text: '使用指南', link: '/pages/manual/2015021401/' }
