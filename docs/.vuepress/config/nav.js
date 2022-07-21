@@ -130,6 +130,17 @@ module.exports = [
     },
     ]
   },
+  {
+    text: '侃一侃',
+    link: '/talk/',
+    items: [
+      { text: '环评', link:'/pages/talk/eia/20190927/' },
+      { text: '排污许可', link:'/pages/talk/ppermit/' },
+      { text: '防洪、内涝', link:'/pages/talk/flood/' },
+      { text: '水环境治理', link:'/pages/talk/bmp/' },
+      { text: '那些年那些事', link:'/pages/talk/miss/' },
+    ]
+  },
   // {
   //   text: '模型',
   //   link: '/models/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
@@ -168,15 +179,15 @@ module.exports = [
   //   ],
   // },
   { text: '关于', link: '/' },
-  {
-    text: '收藏',
-    link: '/',
-    // items: [
-    //   { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
-    //   { text: '资源', link: '/pages/eee83a9211a70f9d/' },
-    //   { text: 'Vue资源', link: '/pages/12df8ace52d493f6/' },
-    // ],
-  },
+  // {
+  //   text: '收藏',
+  //   link: '/',
+  //   // items: [
+  //   //   { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
+  //   //   { text: '资源', link: '/pages/eee83a9211a70f9d/' },
+  //   //   { text: 'Vue资源', link: '/pages/12df8ace52d493f6/' },
+  //   // ],
+  // },
   {
     text: '索引',
     link: '/archives/',
