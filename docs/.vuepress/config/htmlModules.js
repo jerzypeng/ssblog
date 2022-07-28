@@ -29,6 +29,14 @@ module.exports = {
       margin: 0 0 8px 0;
     ">公众号</p>
     <img src="/img/地表水环境.bmp"  style="width:60%;" />
+    <p style="
+      color: var(--textColor);
+      opacity: 0.9;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0 0 8px 0;
+    ">QQ群</p>
+    <img src="/img/最上川.jpg"  style="width:60%;" />
     <p>
     分享交流水利环境监测、模拟、监管、防治方面的知识。
     </p>
