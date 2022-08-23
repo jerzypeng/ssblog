@@ -134,6 +134,7 @@ module.exports = [
     text: '侃一侃',
     link: '/talk/',
     items: [
+      {text: '环境观察',link:'/pages/talk/view/2022082301/'},
       { text: '环评', link:'/pages/talk/eia/20190927/' },
       { text: '排污许可', link:'/pages/talk/ppermit/' },
       { text: '防洪、内涝', link:'/pages/talk/flood/' },
