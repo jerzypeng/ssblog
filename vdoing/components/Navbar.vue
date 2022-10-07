@@ -11,6 +11,7 @@
         v-if="$site.themeConfig.logo"
         :src="$withBase($site.themeConfig.logo)"
         :alt="$siteTitle"
+        style="width:50%"
       />
       <span
         ref="siteName"

@@ -399,8 +399,8 @@ export default {
           // color lighten($bannerTextColor,10%)
           color inherit
           .feature-img
-            width 10rem
-            height 10rem
+            width 12rem
+            height 12rem
             animation heart 1.2s ease-in-out 0s infinite alternate
             animation-play-state paused
           h2
@@ -435,8 +435,8 @@ export default {
             // color lighten($bannerTextColor,10%)
             color inherit
             .feature-img
-              width 10rem
-              height 10rem
+              width 12rem
+              height 12rem
             h2
               font-size 1.1rem
               font-weight 500
@@ -503,8 +503,8 @@ export default {
             h2
               font-size 1.1rem
             .feature-img
-              width 9rem
-              height 9rem
+              width 10rem
+              height 10rem
 // 719px以下
 @media (max-width $MQMobile)
   .home-wrapper
