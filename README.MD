@@ -94,3 +94,16 @@ npm run dev # or yarn dev
 [MIT](https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE)
 
 Copyright (c) 2019-present Evan Xu
+
+---
+```js
+<script data-ad-client="ca-pub-7254565008152153" async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-2RW2PZSB0P"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	  gtag('config', 'G-2RW2PZSB0P');
+	</script>
+```

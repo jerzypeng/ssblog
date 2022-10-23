@@ -18,5 +18,12 @@ module.exports = [
       async: 'async',
       src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
     },
-  ], // 网站关联Google AdSense 与 html格式广告支持
+  ], // 网站关联Google AdSense 与 html格式广告支持 
+  [
+    'script',
+    {
+      async: 'async',
+      src: 'https://www.googletagmanager.com/gtag/js?id=G-2RW2PZSB0P'
+    }
+  ], 
 ]

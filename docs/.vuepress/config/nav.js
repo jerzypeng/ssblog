@@ -6,9 +6,7 @@ module.exports = [
     link: '/tools/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [
       {
-        text: '开发日志', items: [
-          { text: '日志', link: '/pages/log/' }
-        ]
+        text: '开发日志', link: '/pages/log/'
       },
       { text: '使用指南', link: '/pages/manual/2015021401/' }
     ]
@@ -75,7 +73,7 @@ module.exports = [
     {
       text: 'opengis', items: [
         { text: '使用技巧', link: '/pages/gis/application/qgis/2022071301/' },
-        { text: '开发技巧', link: '/pages/gis/dev/2015021401/' }]
+        { text: '开发技巧', link: '/pages/gis/dev/opengis/2015021401/' }]
     },
     ],
   },
@@ -98,14 +96,18 @@ module.exports = [
     text: '程序开发',
     link: '/coding/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [{
+      text: '闲聊', link: '/pages/coding/memo/2022101101/'
+    },{
       text: '语言', items: [
         { text: '.net', link: '/pages/coding/.net/2022070301/' },
         { text: 'python', link: '/pages/coding/python/2020090301/' }]
     },{
+      text: '数据库及分布式存储', link: '/pages/coding/database/2022102303/' 
+    },{
       text: '工具', items: [
         { text: 'git', link: '/pages/coding/tools/git/2020090301/' },
         { text: 'vs', link: '/pages/coding/tools/vs/2020090301/' }]
-    },
+    },{ text:'开发问题集锦', link: '/pages/coding/Q&A/2022102306/'}
     ]
   },
   {
