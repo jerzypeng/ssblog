@@ -181,7 +181,7 @@ module.exports = [
   //     { text: '友情链接', link: '/friends/' },
   //   ],
   // },
-  { text: '关于', link: '/' },
+  { text: '关于', link: '/aboutus/' },
   // {
   //   text: '收藏',
   //   link: '/',
