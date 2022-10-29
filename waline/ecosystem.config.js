@@ -11,7 +11,7 @@ module.exports = {
         SQLITE_PATH: path.resolve(__dirname, "./app/data"),
         JWT_TOKEN: "5474207a578311ed9b6a0242ac120002",
         SITE_NAME: "ssblog",
-        SECURE_DOMAINS: "localhost",
+        SECURE_DOMAINS: "localhost,toolsbox.org.cn",
       },
     },
   ],

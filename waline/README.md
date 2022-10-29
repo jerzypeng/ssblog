@@ -4,12 +4,6 @@
 
 >> https://waline.js.org/reference/env.html 官方环境变量配置
 
-目前我们只用限制一个可以访问接口的Domain
-
-
-eg:
-`SECURE_DOMAINS: ssblog.com`
-
 
 ### 启动
 
