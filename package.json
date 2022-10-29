@@ -8,7 +8,9 @@
     "editFm": "node utils/editFrontmatter.js",
     "baiduPush": "node utils/baiduPush.js https://xugaoyi.com && bash baiduPush.sh",
     "publish": "cd ./theme-vdoing && npm publish && cd ../ && npm run updateTheme",
-    "updateTheme": "npm uninstall vuepress-theme-vdoing && rm -rf node_modules && npm i && npm i vuepress-theme-vdoing -D"
+    "updateTheme": "npm uninstall vuepress-theme-vdoing && rm -rf node_modules && npm i && npm i vuepress-theme-vdoing -D",
+    "start:waline": "pm2 start ./waline/ecosystem.config.js",
+    "stop:waline": "pm2 stop ./waline/ecosystem.config.js"
   },
   "license": "MIT",
   "devDependencies": {
@@ -24,5 +26,9 @@
     "vuepress-plugin-zooming": "^1.1.7",
     "vuepress-theme-vdoing": "^1.8.3",
     "yamljs": "^0.3.0"
+  },
+  "dependencies": {
+    "@waline/vercel": "^1.25.0",
+    "pm2": "^5.2.2"
   }
 }
