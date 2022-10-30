@@ -25,7 +25,7 @@ export const provider = {
           const div = document.createElement("div");
           div.id = `${commentDomID}-count`;
           div.style = "float: left; margin-left: 20px; font-size: 0.8rem;";
-          div.innerHTML = `当前页阅读量为:<span class="waline-pageview-count" style="padding: 0 5px" data-path="${frontmatter.permalink}/">loading...</span>`;
+          div.innerHTML = `当前页阅读量为:<span class="waline-pageview-count" style="padding: 0 5px" data-path="${frontmatter.permalink}/">-</span>`;
 
           const contentDom = document.querySelector('div[title="创建时间"]');
           if (contentDom) {
@@ -49,7 +49,7 @@ export const provider = {
             const div = document.createElement("div");
             const cls = `waline-pageview-count-${i}`;
             div.style = "display: inline-block;";
-            div.innerHTML = `${label}<span class="${cls}" style="padding: 0 5px" id="${cls}" data-path="${frontmatter.permalink}/${key}">loading...</span>`;
+            div.innerHTML = `${label}<span class="${cls}" style="padding: 0 5px" id="${cls}" data-path="${frontmatter.permalink}/${key}">-</span>`;
 
             container.appendChild(div);
 
