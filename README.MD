@@ -96,7 +96,7 @@ npm run dev # or yarn dev
 Copyright (c) 2019-present Evan Xu
 
 ---
-```js
+```js 谷歌广告及统计
 <script data-ad-client="ca-pub-7254565008152153" async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-2RW2PZSB0P"></script>
@@ -106,4 +106,16 @@ Copyright (c) 2019-present Evan Xu
 	  gtag('js', new Date());
 	  gtag('config', 'G-2RW2PZSB0P');
 	</script>
+```
+```js 百度统计
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?3521e157a20d7a83c8eeeb741bf78e21";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
 ```
