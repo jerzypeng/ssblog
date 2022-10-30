@@ -21,7 +21,7 @@ categories:
 
 如果已经安装了以上运行环境，可以直接点击<span class="JustThisApp"><a href="SYApp.WPF.application">启动应用</a></span>。否则，可点击下面安装按钮，在本地安装以上运行环境。
 
-<a id="InstallButton" href="setup.exe">安装</a>
+<a id="InstallButton" target="_blank" statistical-key="app" statistical-label="下载量为:" href="setup.exe">安装</a>
 
 ------------
 #### | 应用名称 |
@@ -38,4 +38,4 @@ categories:
 
 如果已经安装了以上运行环境，可以直接点击<span class="JustThisApp"><a href="watergis/WaterGIS.application">启动应用</a></span>。否则，可点击下面安装按钮，在本地安装以上运行环境。
 
-<a id="InstallButton" href="watergis/setup.exe">安装</a>
+<a id="InstallButton" target="_blank" statistical-key="watergis" statistical-label="下载量为:" href="watergis/setup.exe">安装</a>
