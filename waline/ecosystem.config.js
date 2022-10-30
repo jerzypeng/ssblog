@@ -1,4 +1,5 @@
 const path = require('path');
+const FORBIDDEN_WORDS = require('./app/forbidden_words');
 
 module.exports = {
   apps: [
@@ -12,6 +13,7 @@ module.exports = {
         JWT_TOKEN: "5474207a578311ed9b6a0242ac120002",
         SITE_NAME: "ssblog",
         SECURE_DOMAINS: "localhost,toolsbox.org.cn",
+        FORBIDDEN_WORDS,
       },
     },
   ],
