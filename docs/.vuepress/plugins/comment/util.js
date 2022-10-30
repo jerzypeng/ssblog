@@ -1,44 +1,90 @@
-const delay = (ms = 1000) => new Promise(r => setTimeout(r, ms));
+const delay = (ms = 1000) => new Promise((r) => setTimeout(r, ms));
 
 export const provider = {
   waline: {
-    async render (frontmatter, commentDomID) {
-      const commentDOM = document.createElement('div')
-      commentDOM.id = commentDomID
+    async render(frontmatter, commentDomID) {
+      const commentDOM = document.createElement("div");
+      commentDOM.id = commentDomID;
 
-      const parentDOM = document.querySelector(COMMENT_CONTAINER)
-      parentDOM.appendChild(commentDOM)
+      const parentDOM = document.querySelector(COMMENT_CONTAINER);
+      parentDOM.appendChild(commentDOM);
 
       if (!document.querySelector(`#${commentDomID}-js`)) {
-        const script = document.createElement('script')
+        const script = document.createElement("script");
         script.id = `${commentDomID}-js`;
-        script.src = "https://unpkg.com/@waline/client@v2/dist/waline.js"
+        script.src = "https://unpkg.com/@waline/client@v2/dist/waline.js";
         document.body.appendChild(script);
 
-        const style = document.createElement('link');
+        const style = document.createElement("link");
         style.id = `${commentDomID}-css`;
-        style.rel="stylesheet"
-        style.href = "https://unpkg.com/@waline/client@v2/dist/waline.css"
+        style.rel = "stylesheet";
+        style.href = "https://unpkg.com/@waline/client@v2/dist/waline.css";
 
         document.body.appendChild(style);
       }
 
       if (!document.querySelector(`#${commentDomID}-count`)) {
-        const div = document.createElement('div');
+        const div = document.createElement("div");
         div.id = `${commentDomID}-count`;
-        div.style = "float: left; margin-left: 20px; font-size: 0.8rem;"
-        div.innerHTML = `当前页阅读量为:<span class="waline-pageview-count" style="padding: 0 5px" data-path="${frontmatter.permalink}/">loading...</span>`
+        div.style = "float: left; margin-left: 20px; font-size: 0.8rem;";
+        div.innerHTML = `当前页阅读量为:<span class="waline-pageview-count" style="padding: 0 5px" data-path="${frontmatter.permalink}/">loading...</span>`;
 
-        const contentDom = document.querySelector('div[class="date iconfont icon-riqi"]');
+        const contentDom = document.querySelector(
+          'div[class="date iconfont icon-riqi"]'
+        );
         if (contentDom) {
           contentDom.parentNode.appendChild(div);
         }
       }
 
+      const runStacks = [];
+
+      [].forEach.call(
+        document.querySelectorAll("[statistical-key]"),
+        (item, i) => {
+          const container = document.createElement("span");
+          item.parentNode.appendChild(container);
+          container.appendChild(item);
+          const key = item.getAttribute("statistical-key");
+          const label = item.getAttribute("statistical-label");
+          item.removeAttribute("statistical-key");
+          item.removeAttribute("statistical-label");
+
+          const div = document.createElement("div");
+          const cls = `waline-pageview-count-${i}`;
+          div.style = "display: inline-block;";
+          div.innerHTML = `${label}<span class="${cls}" style="padding: 0 5px" id="${cls}" data-path="${frontmatter.permalink}/${key}">loading...</span>`;
+
+          container.appendChild(div);
+
+          runStacks.push(() => {
+            window.Waline.pageviewCount({
+              serverURL: COMMENT_OPTIONS.serverURL,
+              path: `${window.location.pathname}${key}`,
+              selector: `.${cls}`,
+              update: false,
+            });
+          });
+
+          item.onclick = () => {
+            if (window.Waline.pageviewCount) {
+              window.Waline.pageviewCount({
+                serverURL: COMMENT_OPTIONS.serverURL,
+                selector: cls,
+                path: `${window.location.pathname}${key}`,
+              });
+            }
+
+            const countDom = document.querySelector(`#${cls}`);
+            countDom.innerHTML = ~~countDom.innerHTML + 1;
+          };
+        }
+      );
+
       let count = 0;
       const maxCount = 100;
 
-      while(count < maxCount) {
+      while (count < maxCount) {
         if (window.Waline) {
           break;
         } else {
@@ -50,17 +96,19 @@ export const provider = {
         ...COMMENT_OPTIONS,
         el: `#${commentDomID}`,
       });
+
+      runStacks.forEach((fun) => fun());
     },
-    clear (commentDomID) {
-      const last = document.querySelector(`#${commentDomID}`)
+    clear(commentDomID) {
+      const last = document.querySelector(`#${commentDomID}`);
       if (last) {
-        last.remove()
+        last.remove();
       }
-      const count = document.querySelector(`${commentDomID}-count`)
+      const count = document.querySelector(`${commentDomID}-count`);
       if (count) {
-        count.remove()
+        count.remove();
       }
-      return true
-    }
-  }
-}
+      return true;
+    },
+  },
+};
