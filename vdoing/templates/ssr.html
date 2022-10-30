@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="{{ lang }}">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?f8be0f6fe47ec8b4953317b2ada58d36";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
     <title>{{ title }}</title>
-    <meta name="generator" content="VuePress {{ version }}">
+    <meta name="generator" content="VuePress {{ version }}" />
     {{{ userHeadTags }}}
     {{{ pageMeta }}}
     {{{ canonicalLink }}}
