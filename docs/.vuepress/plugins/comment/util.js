@@ -23,7 +23,7 @@ export const provider = {
           const div = document.createElement("div");
           div.id = `${commentDomID}-count`;
           div.style = "float: left; margin-left: 20px; font-size: 0.8rem;";
-          div.innerHTML = `当前页阅读量为:<span class="waline-pageview-count" style="padding: 0 5px" data-path="${frontmatter.permalink.replace(
+          div.innerHTML = `阅读量:<span class="waline-pageview-count" style="padding: 0 5px" data-path="${frontmatter.permalink.replace(
             /\/*$/,
             ""
           )}/">-</span>`;
