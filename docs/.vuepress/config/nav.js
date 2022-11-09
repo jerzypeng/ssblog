@@ -100,14 +100,16 @@ module.exports = [
     },{
       text: '语言', items: [
         { text: '.net', link: '/pages/coding/.net/2022070301/' },
-        { text: 'python', link: '/pages/coding/python/2020090301/' }]
+        { text: 'python', link: '/pages/coding/python/2020090301/' },
+        { text: '混合编程', link: '/pages/coding/mixcoding/2022110902/' }]
     },{
       text: '数据库及分布式存储', link: '/pages/coding/database/2022102303/' 
     },{
       text: '工具', items: [
         { text: 'git', link: '/pages/coding/tools/git/2020090301/' },
         { text: 'vs', link: '/pages/coding/tools/vs/2020090301/' }]
-    },{ text:'开发问题集锦', link: '/pages/coding/Q&A/2022102306/'}
+    },{ text:'开发问题集锦', link: '/pages/coding/Q&A/2022102306/'},
+    {text: '电脑小知识', link: '/pages/coding/computerskills/2022110903/'}
     ]
   },
   {
