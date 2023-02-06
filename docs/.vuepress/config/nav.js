@@ -55,6 +55,12 @@ module.exports = [
         { text: '开发技巧', link: '/pages/wash-mode/dev/2015021401/' }]
     },
     {
+      text: 'SWMM模型', items: [
+        { text: '模型简介', link: '/pages/swmm-model/introduction/swmm/' },
+        { text: '使用技巧', link: '/pages/swmm-model/application/2023020601/' },
+        { text: '开发技巧', link: '/pages/swmm-mode/dev/2023020602/' }]
+    },
+    {
       text: '机器学习', items: [
         { text: '模型简介', link: '/pages/ml-model/introduction/ml/' },
         { text: '使用技巧', link: '/pages/ml-model/application/hydro/' },
@@ -66,12 +72,17 @@ module.exports = [
     text: 'GIS',
     link: '/gis/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [{
+      text: '坐标系统', link: '/pages/gis/application/coordsys/2022121101/'
+    },
+      {
       text: 'Arcgis', items: [
+        { text: '软件简介', link: '/pages/gis/introduction/arcgis/' },
         { text: '使用技巧', link: '/pages/gis/application/arcgis/2021090801/' },
         { text: '开发技巧', link: '/pages/gis/dev/arcgis/2015021401/' }]
     },
     {
-      text: 'opengis', items: [
+      text: 'QGIS', items: [
+        { text: '软件简介', link: '/pages/gis/introduction/qgis/' },
         { text: '使用技巧', link: '/pages/gis/application/qgis/2022071301/' },
         { text: '开发技巧', link: '/pages/gis/dev/opengis/2015021401/' }]
     },
@@ -89,6 +100,11 @@ module.exports = [
       text:'模拟数据',items:[
         {text:'水文数据',link:'/pages/database/hydrodata/'}
       ]
+    },
+    {
+      text:'环境信息',items:[
+        {text:'污染源',link:'/pages/database/enviodata/sources/water/2023010701/'}
+      ]
     }
     ]
   },
@@ -104,6 +120,8 @@ module.exports = [
         { text: '混合编程', link: '/pages/coding/mixcoding/2022110902/' }]
     },{
       text: '数据库及分布式存储', link: '/pages/coding/database/2022102303/' 
+    },{
+      text: 'Web、服务器安全', link: '/pages/coding/security/2022120701/' 
     },{
       text: '工具', items: [
         { text: 'git', link: '/pages/coding/tools/git/2020090301/' },
@@ -143,7 +161,7 @@ module.exports = [
       { text: '排污许可', link:'/pages/talk/ppermit/' },
       { text: '防洪、内涝', link:'/pages/talk/flood/' },
       { text: '水环境治理', link:'/pages/talk/bmp/' },
-      { text: '那些年那些事', link:'/pages/talk/miss/' },
+      { text: '那些年那些事', link:'/pages/talk/miss/2022120401/' },
     ]
   },
   // {
