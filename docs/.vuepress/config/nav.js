@@ -61,6 +61,9 @@ module.exports = [
         { text: '开发技巧', link: '/pages/swmm-mode/dev/2023020602/' }]
     },
     {
+      text: '水文模型', link: '/pages/model/hydroloymodel/tr55/'
+    },
+    {
       text: '机器学习', items: [
         { text: '模型简介', link: '/pages/ml-model/introduction/ml/' },
         { text: '使用技巧', link: '/pages/ml-model/application/hydro/' },
