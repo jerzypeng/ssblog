@@ -16,15 +16,15 @@ module.exports = [
     link: '/models/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [{
       text: '模型概述', link: '/pages/model/general/2021090801/'
-    },    
-      {
+    },
+    {
       text: '模型平台', items: [
         { text: '平台开发', link: '/pages/model/dev/2021090801/' },
         { text: '平台展示', link: '/pages/mode/show/2015021401/' },
         { text: '标准化接口', link: '/pages/model/apidoc/' },
       ]
     },
-      {
+    {
       text: 'MIKE模型', items: [
         { text: '模型简介', link: '/pages/mike-model/introduction/mike/' },
         { text: '使用技巧', link: '/pages/mike-model/application/2020090301/' },
@@ -61,6 +61,12 @@ module.exports = [
         { text: '开发技巧', link: '/pages/swmm-mode/dev/2023020602/' }]
     },
     {
+      text: 'HSPF模型', items: [
+        { text: '模型简介', link: '/pages/hspf-model/introduction/hspf/' },
+        { text: '使用技巧', link: '/pages/hspf-model/application/2023052501/' },
+        { text: '开发技巧', link: '/pages/hspf-mode/dev/2023020602/' }]
+    },
+    {
       text: '水文模型', link: '/pages/model/hydroloymodel/tr55/'
     },
     {
@@ -69,7 +75,7 @@ module.exports = [
         { text: '使用技巧', link: '/pages/ml-model/application/hydro/' },
         { text: '开发技巧', link: '/pages/ml-mode/dev/2015021401/' }]
     },
-    { text: '模型比较', link: '/pages/models/modelcompare/2022060102/'}],
+    { text: '模型比较', link: '/pages/models/modelcompare/2022060102/' }],
   },
   {
     text: 'GIS',
@@ -77,7 +83,7 @@ module.exports = [
     items: [{
       text: '坐标系统', link: '/pages/gis/application/coordsys/2022121101/'
     },
-      {
+    {
       text: 'Arcgis', items: [
         { text: '软件简介', link: '/pages/gis/introduction/arcgis/' },
         { text: '使用技巧', link: '/pages/gis/application/arcgis/2021090801/' },
@@ -100,13 +106,13 @@ module.exports = [
         { text: '政府采购水利项目', link: '/pages/projects/hb/' }]
     },
     {
-      text:'模拟数据',items:[
-        {text:'水文数据',link:'/pages/database/hydrodata/'}
+      text: '模拟数据', items: [
+        { text: '水文数据', link: '/pages/database/hydrodata/' }
       ]
     },
     {
-      text:'环境信息',items:[
-        {text:'污染源',link:'/pages/database/enviodata/sources/water/2023010701/'}
+      text: '环境信息', items: [
+        { text: '污染源', link: '/pages/database/enviodata/sources/water/2023010701/' }
       ]
     }
     ]
@@ -115,22 +121,49 @@ module.exports = [
     text: '程序开发',
     link: '/coding/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
     items: [{
-      text: '闲聊', link: '/pages/coding/memo/2022101101/'
-    },{
-      text: '语言', items: [
+      text: '闲聊',
+      link: '/pages/coding/memo/2022101101/'
+    }, {
+      text: '语言',
+      link: '/pages/coding/.net/2022070301/',
+      items: [
         { text: '.net', link: '/pages/coding/.net/2022070301/' },
         { text: 'python', link: '/pages/coding/python/2020090301/' },
         { text: '混合编程', link: '/pages/coding/mixcoding/2022110902/' }]
-    },{
-      text: '数据库及分布式存储', link: '/pages/coding/database/2022102303/' 
-    },{
-      text: 'Web、服务器安全', link: '/pages/coding/security/2022120701/' 
-    },{
-      text: '工具', items: [
+    }, {
+      text: '数据库及分布式存储',
+      link: '/pages/coding/database/2022102303/'
+    }, {
+      text: 'Web、服务器安全',
+      link: '/pages/coding/security/2022120701/'
+    }, {
+      text: '工具',
+      link: '/pages/coding/tools/git/2020090301/',
+      items: [
         { text: 'git', link: '/pages/coding/tools/git/2020090301/' },
         { text: 'vs', link: '/pages/coding/tools/vs/2020090301/' }]
-    },{ text:'开发问题集锦', link: '/pages/coding/Q&A/2022102306/'},
-    {text: '电脑小知识', link: '/pages/coding/computerskills/2022110903/'}
+    }, {
+      text: '开发问题集锦', link: '/pages/coding/Q&A/2022102306/'
+    }, {
+      text: '系统',
+      link: '/pages/coding/system/win/2022110903/',
+      items: [
+        {
+          text: 'Windows',
+          link: '/pages/coding/system/win/2022110903/',
+          items: [
+            { text: '电脑小知识', link: '/pages/coding/system/win/2022110903/' },
+          ]
+        },
+        {
+          text: 'Linux', 
+          link: '/pages/coding/system/linux/2023050201/',
+          items: [
+            { text: 'Ubuntu', link: '/pages/coding/system/linux/2023050201/' }
+          ]
+        }
+      ]
+    },
     ]
   },
   {
@@ -140,15 +173,15 @@ module.exports = [
       text: '鄱阳湖流域', items: [
         { text: '模型研究', link: '/pages/research/pyh/model/' },
         { text: '信息管理平台', link: '/pages/research/pyh/dss/' }]
-    },{
+    }, {
       text: '太湖流域', items: [
         { text: '模型研究', link: '/pages/research/th/model/' },
         { text: '信息管理平台', link: '/pages/research/th/dss/' }]
-    },{
+    }, {
       text: '巢湖流域', items: [
         { text: '模型研究', link: '/pages/research/chh/model/' },
         { text: '信息管理平台', link: '/pages/research/chh/dss/' }]
-    },{
+    }, {
       text: '渤海湾', items: [
         { text: '模型研究', link: '/pages/research/bhw/model/' },
         { text: '信息管理平台', link: '/pages/research/bhw/dss/' }]
@@ -159,12 +192,12 @@ module.exports = [
     text: '侃一侃',
     link: '/talk/',
     items: [
-      {text: '环境观察',link:'/pages/talk/view/2022082301/'},
-      { text: '环评', link:'/pages/talk/eia/20190927/' },
-      { text: '排污许可', link:'/pages/talk/ppermit/' },
-      { text: '防洪、内涝', link:'/pages/talk/flood/' },
-      { text: '水环境治理', link:'/pages/talk/bmp/' },
-      { text: '那些年那些事', link:'/pages/talk/miss/2022120401/' },
+      { text: '环境观察', link: '/pages/talk/view/2022082301/' },
+      { text: '环评', link: '/pages/talk/eia/20190927/' },
+      { text: '排污许可', link: '/pages/talk/ppermit/' },
+      { text: '防洪、内涝', link: '/pages/talk/flood/' },
+      { text: '水环境治理', link: '/pages/talk/bmp/' },
+      { text: '那些年那些事', link: '/pages/talk/miss/2022120401/' },
     ]
   },
   // {
