@@ -107,7 +107,7 @@ module.exports = [
     },
     {
       text: '模拟数据', items: [
-        { text: '水文数据', link: '/pages/database/hydrodata/' }
+        { text: '开放数据', link: '/pages/database/opendataset/' }
       ]
     },
     {
