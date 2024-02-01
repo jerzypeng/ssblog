@@ -114,6 +114,11 @@ module.exports = [
       text: '环境信息', items: [
         { text: '污染源', link: '/pages/database/enviodata/sources/water/2023010701/' }
       ]
+    },
+    {
+      text: '标准化报告', items: [
+        { text: '标准化分析报告', link: '/pages/database/enviodata/reports/rainfall/2024020101/' }
+      ]
     }
     ]
   },
