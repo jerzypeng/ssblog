@@ -1,6 +1,6 @@
-import { DefaultThemeConfig } from '@vuepress/types'
+import { DefaultThemeConfig } from '@vuepress/types';
 
-type NoSidebar4DefaultThemeConfig = Omit<DefaultThemeConfig, 'sidebar'> // 忽略sidebar属性
+type NoSidebar4DefaultThemeConfig = Omit<DefaultThemeConfig, 'sidebar'>; // 忽略sidebar属性
 
 /**
  * Vdoing主题配置类型
@@ -66,8 +66,8 @@ export interface VdoingThemeConfig extends NoSidebar4DefaultThemeConfig {
    * @default {showToArticle: true, moreArticle: '/archives'}
    */
   updateBar?: {
-    showToArticle: boolean,
-    moreArticle?: '/archives' | string
+    showToArticle: boolean;
+    moreArticle?: '/archives' | string;
   };
 
   /**
@@ -92,68 +92,66 @@ export interface VdoingThemeConfig extends NoSidebar4DefaultThemeConfig {
    * 侧边栏配置
    */
   sidebar?:
-  | 'structuring'
-  | { mode: 'structuring', collapsable: Boolean }
-  | DefaultThemeConfig['sidebar']
+    'structuring' | { mode: 'structuring'; collapsable: boolean } | DefaultThemeConfig['sidebar'];
 
   /**
    * 文章默认的作者信息
    */
-  author?: string | { name: string, link?: string }
+  author?: string | { name: string; link?: string };
 
   /**
    * 博主信息 (显示在首页侧边栏)
    */
   blogger?: {
-    avatar: string,
-    name: string,
-    slogan?: string,
-  }
+    avatar: string;
+    name: string;
+    slogan?: string;
+  };
 
   /**
    * 社交图标 (显示于博主信息栏和页脚栏)
    * @内置图标-see：https://doc.xugaoyi.com/pages/a20ce8/#social
    */
   social?: {
-    iconfontCssFile?: string,
+    iconfontCssFile?: string;
     icons: {
-      iconClass: string,
-      title: string,
-      link: string,
-    }[]
-  }
+      iconClass: string;
+      title: string;
+      link: string;
+    }[];
+  };
 
   /**
    * 页脚信息
    */
   footer?: {
-    createYear: number,
-    copyrightInfo: string
-  }
+    createYear: number;
+    copyrightInfo: string;
+  };
 
   /**
    * 扩展自动生成frontmatter。
    * 说明：当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。
    */
   extendFrontmatter?: {
-    [key: string]: any
-  }
+    [key: string]: any;
+  };
 
   /**
    * 自定义hmtl(广告)模块
    * @see: https://doc.xugaoyi.com/pages/a20ce8/#htmlmodules
    */
   htmlModules?: {
-    homeSidebarB?: string,
-    sidebarT?: string,
-    sidebarB?: string,
-    pageT?: string,
-    pageB?: string,
-    pageTshowMode?: 'article' | 'custom',
-    pageBshowMode?: 'article' | 'custom',
-    windowLB?: string,
-    windowRB?: string,
-  }
+    homeSidebarB?: string;
+    sidebarT?: string;
+    sidebarB?: string;
+    pageT?: string;
+    pageB?: string;
+    pageTshowMode?: 'article' | 'custom';
+    pageBshowMode?: 'article' | 'custom';
+    windowLB?: string;
+    windowRB?: string;
+  };
 
   /**
    * 兼容其他未列举配置项

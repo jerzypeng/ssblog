@@ -12,13 +12,37 @@
     "start:waline": "pm2 start ./waline/ecosystem.config.js",
     "stop:waline": "pm2 delete all",
     "waline:monit": "pm2 monit",
-    "pm2": "pm2"
+    "pm2": "pm2",
+    "lint": "eslint . --ext .js,.ts,.vue --ignore-path .gitignore",
+    "lint:fix": "eslint . --ext .js,.ts,.vue --ignore-path .gitignore --fix",
+    "format": "prettier --write \"**/*.{js,ts,vue,json,md,yml,yaml,css,scss}\" --ignore-path .gitignore",
+    "format:check": "prettier --check \"**/*.{js,ts,vue,json,md,yml,yaml,css,scss}\" --ignore-path .gitignore",
+    "stylelint": "stylelint \"**/*.{vue,styl,css,scss}\" --ignore-path .gitignore",
+    "stylelint:fix": "stylelint \"**/*.{vue,styl,css,scss}\" --ignore-path .gitignore --fix",
+    "prepare": "husky install"
   },
   "license": "MIT",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.72.2",
+    "@typescript-eslint/parser": "^8.72.2",
+    "@vuepress/types": "^1.9.10",
     "dayjs": "^1.9.7",
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "husky": "^8.0.0",
     "inquirer": "^7.1.0",
     "json2yaml": "^1.1.0",
+    "lint-staged": "^14.0.0",
+    "postcss-html": "^1.5.0",
+    "postcss-stylus": "^0.0.1",
+    "prettier": "^3.0.0",
+    "prettier-plugin-stylus": "^0.1.0",
+    "stylelint": "^14.16.1",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-standard": "^29.0.0",
     "vuepress": "1.8.0",
     "vuepress-plugin-baidu-autopush": "^1.0.1",
     "vuepress-plugin-baidu-tongji": "^1.0.1",
@@ -32,5 +56,21 @@
   "dependencies": {
     "@waline/vercel": "^1.25.0",
     "pm2": "^5.2.2"
+  },
+  "overrides": {
+    "lru-cache": "5.1.1"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,yml,yaml}": [
+      "prettier --write"
+    ],
+    "*.{css,styl,scss}": [
+      "stylelint --fix",
+      "prettier --write"
+    ]
   }
 }

@@ -1,0 +1,48 @@
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+      day: 'monday'
+      time: '04:00'
+      timezone: 'Asia/Shanghai'
+    labels:
+      - 'dependencies'
+      - 'npm'
+    commit-message:
+      prefix: 'chore(deps)'
+      prefix-development: 'chore(dev-deps)'
+    groups:
+      vuepress:
+        patterns:
+          - 'vuepress*'
+          - '@vuepress*'
+        update-types:
+          - 'minor'
+          - 'patch'
+      dev-tools:
+        patterns:
+          - 'eslint*'
+          - 'prettier*'
+          - 'stylelint*'
+          - 'husky*'
+          - 'lint-staged*'
+        update-types:
+          - 'minor'
+          - 'patch'
+      build-tools:
+        patterns:
+          - 'webpack*'
+          - 'vite*'
+          - 'rollup*'
+        update-types:
+          - 'minor'
+          - 'patch'
+    ignore:
+      # VuePress 1.x to 2.x is a major breaking change, handle manually
+      - dependency-name: 'vuepress'
+        versions: ['2.x']
+      - dependency-name: 'vuepress-theme-vdoing'
+        versions: ['2.x']
+    open-pull-requests-limit: 10

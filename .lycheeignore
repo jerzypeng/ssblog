@@ -1,0 +1,71 @@
+# lychee link checker ignore patterns
+# 外部已知可能失效的链接
+
+# 百度相关
+https://www.baidu.com/*
+
+# 百度统计
+https://hm.baidu.com/*
+
+# Google 广告/统计 (国内无法访问)
+https://pagead2.googlesyndication.com/*
+https://www.googletagmanager.com/*
+https://www.google-analytics.com/*
+
+# jsdelivr CDN (偶发不稳定)
+https://cdn.jsdelivr.net/*
+
+# 图片外链 (toolsbox.org.cn)
+http://md.toolsbox.org.cn/*
+https://md.toolsbox.org.cn/*
+
+# 微信/支付宝二维码图片
+https://cdn.jsdelivr.net/gh/xugaoyi/image_store/*
+
+# Runoob (偶发不稳定)
+https://www.runoob.com/*
+
+# MDN (正常但排除避免误报)
+https://developer.mozilla.org/*
+
+# Vue API (正常但排除)
+https://cn.vuejs.org/*
+
+# Bing 搜索
+https://cn.bing.com/*
+
+# GitHub raw (用于图片)
+https://raw.githubusercontent.com/*
+
+# 微信公众号链接
+https://mp.weixin.qq.com/*
+
+# 本地开发地址
+http://localhost:*
+http://127.0.0.1:*
+http://0.0.0.0:*
+
+# 内网地址
+http://10.*.*.*:*
+http://192.168.*.*.*:*
+
+# 邮件链接
+mailto:*
+
+# 电话链接
+tel:*
+
+# QQ/微信协议链接
+tencent://*
+weixin://*
+
+# 已知失效的旧文章链接
+http://toolsbox.org.cn/download/
+http://game.xugaoyi.com/
+
+# 动态生成的搜索链接
+*site:xugaoyi.com*
+
+# 排除特定模式
+*{#}*
+*{*}*

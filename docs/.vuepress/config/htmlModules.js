@@ -19,8 +19,7 @@
  */
 
 module.exports = {
-  homeSidebarB:
-    `<div style="padding: 0.95rem">
+  homeSidebarB: `<div style="padding: 0.95rem">
     <p style="
       color: var(--textColor);
       opacity: 0.9;
@@ -113,8 +112,7 @@ module.exports = {
   //         (adsbygoogle = window.adsbygoogle || []).push({});
   //     </script>
   //     `,
-}
-
+};
 
 // module.exports = {
 //   homeSidebarB: `<div style="width:100%;height:100px;color:#fff;background: #eee;">自定义模块测试</div>`,

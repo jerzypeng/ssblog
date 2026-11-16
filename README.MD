@@ -1,121 +1,179 @@
-<p align="center"><a href="https://xugaoyi.com/" target="_blank" rel="noopener noreferrer"><img width="180" src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200409124835.png" alt="logo"></a></p>
+# 嗖嗖社区 - 水利环境技术博客
 
-<p align="center">
-  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/actions?query=workflow%3ACI"><img src="https://github.com/xugaoyi/vuepress-theme-vdoing/workflows/CI/badge.svg" alt="CI"></a>
-  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/actions?query=workflow%3AbaiduPush"><img src="https://github.com/xugaoyi/vuepress-theme-vdoing/workflows/baiduPush/badge.svg" alt="baiduPush"></a>
-  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE"><img src="https://img.shields.io/github/license/xugaoyi/vuepress-theme-vdoing
-" alt="License"></a>
-  <a href="https://www.npmjs.com/package/vuepress-theme-vdoing"><img alt="npm" src="https://img.shields.io/npm/v/vuepress-theme-vdoing"></a>
-  <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/stargazers"><img src="https://img.shields.io/github/stars/xugaoyi/vuepress-theme-vdoing?logo=ReverbNation&logoColor=rgba(255,255,255,.6)" alt="GitHub stars"></a>
+基于 VuePress 1.x + vdoing 主题构建的个人技术博客，专注于水利环境领域的技术分享与总结。
 
+## 🚀 技术栈
 
+- **框架**: VuePress 1.8.0
+- **主题**: vuepress-theme-vdoing 1.8.3
+- **语言**: JavaScript / Vue 2
+- **样式**: Stylus
+- **部署**: GitHub Pages + GitHub Actions
+- **评论**: Waline v2
+- **统计**: 百度统计 + 自动推送
 
-</p>
+## 📁 项目结构
 
-<h2 align="center">vuepress-theme-vdoing</h2>
+```
+ssblog/
+├── docs/                    # 文档源码目录
+│   ├── .vuepress/          # VuePress 配置
+│   │   ├── config/         # 配置拆分文件
+│   │   ├── plugins/        # 本地插件
+│   │   ├── public/         # 静态资源
+│   │   └── styles/         # 全局样式
+│   ├── _posts/             # 博客文章 (随笔)
+│   ├── 01.工具箱/          # 工具箱相关文档
+│   ├── 02.模型/            # 模型技术文档
+│   ├── 03.GIS/             # GIS 相关文档
+│   ├── 04.数据库/          # 数据库技术文档
+│   ├── 05.程序开发/        # 程序开发文档
+│   ├── 06.流域研究/        # 流域研究案例
+│   ├── 07.侃一侃/          # 随笔杂谈
+│   ├── @pages/             # 自动生成页面
+│   └── index.md            # 首页
+├── utils/                   # 工具脚本
+├── .github/                 # GitHub Actions 工作流
+├── .husky/                  # Git Hooks
+├── package.json
+└── README.md
+```
 
-* [文档 (国内源)](https://doc.xugaoyi.com/)
-* [文档 (github源)](https://xugaoyi.github.io/vuepress-theme-vdoing-doc/)
-* [效果：Evan's blog](https://xugaoyi.com/)
+## 🛠️ 本地开发
 
+### 环境要求
 
-## 介绍
-1. 这个主题的初衷是打造一个好用的、面向程序员的`知识管理工具`
-2. 轻松构建一个`结构化`的知识库，让你的知识海洋像一本本书一样清晰易读。
-3. 博客功能提供一种知识的`碎片化`形态，并支持个性化博客配置。
-4. `简洁高效`，以 Markdown 为中心的项目结构。内置自动化工具，以更少的配置完成更多的事。配合多维索引快速定位每个知识点。
+- Node.js 20.x (参考 `.nvmrc` / `.node-version`)
+- npm 9.x+
 
-[**更新日志**](https://github.com/xugaoyi/vuepress-theme-vdoing/releases)
-
-## 这个主题可以做什么？
-* 案例1：[知识库兼博客站](https://xugaoyi.com/)
-* 案例2：[仅博客站](https://xugaoyi.github.io/vdoing-demo-blog/)
-* 案例3：[仅知识库](https://xugaoyi.github.io/vdoing-demo-repository/)
-* 案例4：[文档站](https://xugaoyi.github.io/vuepress-theme-vdoing-doc/)
-
-
-## 快速上手
+### 安装依赖
 
 ```bash
-# clone the project
-git clone https://github.com/xugaoyi/vuepress-theme-vdoing.git
-
-# enter the project directory
-cd vuepress-theme-vdoing
-
-# install dependency
-npm install # or yarn install
-
-# develop
-npm run dev # or yarn dev
+npm install
 ```
-## ⚡️未来...
 
+### 启动开发服务器
 
-期待 [VuePress v2.0](https://github.com/vuepress/vuepress-next) 以及 [VitePress](https://github.com/vuejs/vitepress) 的正式发布...
+```bash
+npm run dev
+```
 
-届时，VuePress 1.x 编译慢的缺点将得到极大的改善。我将会视情况把主题升级至 VuePress v2.0 或 VitePress，也可能两个都升级。目前(2020.10.29)来看还需要一段时间才能让大家使用上基于它们的新版本，还希望大家多多 [:sparkling_heart:支持](https://doc.xugaoyi.com/pages/1b12ed/) 哟，持续关注吧~
+访问 http://localhost:8080
 
-## :sparkling_heart:支持这个项目
+### 构建生产版本
 
-如果你正在使用这个项目并感觉良好，或只是想要支持我继续开发，你可以通过如下*任意* 方式支持我：
+```bash
+npm run build
+```
 
-1. *Star* 并 分享这个项目 :rocket:
-2. 保留主题 footer(页脚) 的主题链接 :D
-3. 关注公众号`yqyjs666`，回复`前端学习`，可获取 [前端学习资源](https://github.com/xugaoyi/blog-gitalk-comment/wiki/Front-end-Study)
-4. 轻轻点击一次页面广告 ✨
-5. 通过以下二维码 一次性捐款。 我多半会买一杯 ~~咖啡~~ 茶。:tea:
+产物输出到 `docs/.vuepress/dist/`
 
-谢谢！ :heart:
+## 📦 部署
 
-| 微信赞赏 | 微信 | 支付宝 |
-| :---: | :---: | :---: |
-| <img src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200523131533.jpg" alt="赞赏码" width=150> | <img src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200410113708.jpg" alt="Wechat QRcode" width=150>| <img src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200410113707.jpg" alt="Alipay QRcode" width=150> |
+### 自动部署 (推荐)
 
-二维码没有正常显示？点 [这里😎](https://doc.xugaoyi.com/pages/1b12ed/)
+推送到 `main` 分支自动触发 GitHub Actions 构建部署到 GitHub Pages。
 
-## 致谢
-:heart:感谢支持这个项目的朋友
+### 手动部署
 
-:heart:感谢为这个项目贡献代码的朋友 → [Contributors](https://github.com/xugaoyi/vuepress-theme-vdoing/graphs/contributors)
+```bash
+npm run deploy
+```
 
-## Vdoing官方交流群
-群号：694387113
+## ✅ 代码规范
 
-<img src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200712122307.jpg" alt="群号：694387113" width="200">
+### 可用脚本
 
-## 公众号
-`有趣研究社`是本人对各种有趣的、好玩的、沙雕的创意和想法以在线小网站或者文章的形式表达出来，比如80、90后朋友小时候玩的小霸王游戏机：<https://game.xugaoyi.com>，还有更多好玩的等你去探索吧~
+```bash
+# 代码检查
+npm run lint          # ESLint 检查
+npm run lint:fix      # ESLint 自动修复
+npm run format        # Prettier 格式化
+npm run format:check  # Prettier 检查
+npm run stylelint     # Stylelint 检查
+npm run stylelint:fix # Stylelint 自动修复
 
-<img src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store@master/blog/扫码_搜索联合传播样式-标准色版.1wp8gd1mhjhc.jpg"  style="width:370px;" />
-<!-- <img src="https://cdn.jsdelivr.net/gh/xugaoyi/image_store@master/blog/qrcode.zdqv9mlfc0g.jpg"  style="width:30%;" /> -->
+# Git Hooks (提交前自动运行)
+npm run prepare       # 安装 husky hooks
+```
 
-## 许可证
-[MIT](https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE)
+### 提交规范
 
-Copyright (c) 2019-present Evan Xu
+- 使用 `lint-staged` 在提交前自动检查暂存文件
+- 建议遵循 [Conventional Commits](https://www.conventionalcommits.org/) 规范
 
+## 📝 内容编写
+
+### Frontmatter 规范
+
+```yaml
 ---
-```js 谷歌广告及统计
-<script data-ad-client="ca-pub-7254565008152153" async="async" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-2RW2PZSB0P"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	  gtag('config', 'G-2RW2PZSB0P');
-	</script>
+title: 文章标题
+date: 2024-01-15
+permalink: /pages/xxx/ # 永久链接
+categories: # 分类 (对应目录结构)
+  - 分类1
+  - 分类2
+tags: # 标签
+  - 标签1
+  - 标签2
+author: # 作者
+  name: 作者名
+  link: 作者链接
+---
 ```
-```js 百度统计
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?3521e157a20d7a83c8eeeb741bf78e21";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
 
+### 目录结构映射
+
+- 物理目录结构自动映射为导航/侧边栏
+- 使用数字前缀控制排序 (如 `01.工具箱/`)
+- `_posts` 目录下的文章归类为"随笔"
+
+## 🔧 配置说明
+
+### 主要配置文件
+
+- `docs/.vuepress/config.js` - 主配置入口
+- `docs/.vuepress/config/themeConfig.js` - 主题配置
+- `docs/.vuepress/config/nav.js` - 导航栏配置
+- `docs/.vuepress/config/plugins.js` - 插件配置
+
+### 环境变量
+
+| 变量           | 说明                        |
+| -------------- | --------------------------- |
+| `GITHUB_TOKEN` | GitHub Actions 自动部署所需 |
+| `CODING_TOKEN` | Coding Pages 部署可选       |
+
+## 📊 监控与维护
+
+### 自动化工作流
+
+- **CI/CD** (`.github/workflows/deploy.yml`) - 推送自动构建部署
+- **依赖更新** (`.github/dependabot.yml`) - 每周一自动检查依赖更新
+- **死链检测** (`.github/workflows/link-check.yml`) - 每周日自动检测
+
+### 百度推送
+
+```bash
+npm run baiduPush  # 生成 urls.txt 并推送
 ```
+
+## 🤝 贡献指南
+
+1. Fork 本仓库
+2. 创建特性分支 (`git checkout -b feature/xxx`)
+3. 提交更改 (`git commit -m 'feat: add xxx'`)
+4. 推送分支 (`git push origin feature/xxx`)
+5. 创建 Pull Request
+
+## 📄 许可证
+
+MIT License - 详见 [LICENSE](LICENSE)
+
+## 🔗 相关链接
+
+- [博客地址](https://xugaoyi.com)
+- [VuePress 官网](https://vuepress.vuejs.org/)
+- [vdoing 主题](https://github.com/xugaoyi/vuepress-theme-vdoing)
+- [Waline 评论](https://waline.js.org/)
