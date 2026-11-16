@@ -31,7 +31,7 @@
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-vue": "^9.17.0",
-    "husky": "^8.0.0",
+    "husky": "^9.1.7",
     "inquirer": "^7.1.0",
     "json2yaml": "^1.1.0",
     "lint-staged": "^14.0.0",
