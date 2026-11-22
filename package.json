@@ -54,7 +54,7 @@
     "yamljs": "^0.3.0"
   },
   "dependencies": {
-    "@waline/vercel": "^1.25.0",
+    "@waline/vercel": "^1.43.8",
     "pm2": "^5.2.2"
   },
   "overrides": {
